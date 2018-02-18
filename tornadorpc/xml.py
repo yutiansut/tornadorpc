@@ -89,5 +89,5 @@ if __name__ == '__main__':
         def system(self):
             return XMLRPCSystem(self)
 
-    print 'Starting server on port %s' % port
+    print ('Starting server on port %s' % port)
     start_server(TestXMLRPC, port=port)

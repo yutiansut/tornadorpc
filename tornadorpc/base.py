@@ -184,9 +184,9 @@ class BaseRPCParser(object):
             if len(err_lines) >= 7 and config.short_errors:
                 # Minimum number of lines to see what happened
                 # Plus title and separators
-                print '\n'.join(err_lines[0:4]+err_lines[-3:])
+                print ('\n'.join(err_lines[0:4]+err_lines[-3:]))
             else:
-                print '\n'.join(err_lines)
+                print ('\n'.join(err_lines))
         # Log here
         return
 
